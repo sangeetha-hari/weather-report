@@ -30,7 +30,6 @@ function displaycity(element){
      <p class="card-text" > Country Name: ${element.country}</p>
      <p class="card-text"> Latitute: ${element.lat}</p>
      <p class="card-text"> State Name: ${element.state}</p>
-     
      </div>
      `
 

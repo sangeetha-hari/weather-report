@@ -16,7 +16,6 @@
 }
 .outcover{
    /* display: flex; */
-   
    background-color: rgb(127, 255, 193);
    word-wrap: break-word;
    gap: 10px;
