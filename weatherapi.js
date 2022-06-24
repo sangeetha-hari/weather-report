@@ -5,6 +5,10 @@ document.body.innerHTML = `
 <h1 class= "card-title ">Weather report</h1>
 </div>
  `;
+ let outcover= document.createElement("div");
+//  outcover.innerText="hello";
+ outcover.setAttribute("class", "outcover");
+ document.body.append(outcover);
 let apiData;
 
 function getdata() {
@@ -23,12 +27,13 @@ getdata();
 
 function displaycity(element) {
   console.log(element);
-  document.body.innerHTML += `
+  outcover.innerHTML += `
      <div class="card-body container" style="width: 200px;"> 
      <p class="card-text" > City Name: ${element.name}</p>
      <p class="card-text" > Country Name: ${element.country}</p>
      <p class="card-text"> Latitute: ${element.lat}</p>
      <p class="card-text"> State Name: ${element.state}</p>
+     </div>
      </div>
      `;
 }
